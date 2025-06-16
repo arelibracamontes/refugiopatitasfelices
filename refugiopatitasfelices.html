@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refugio Patitas Felices</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefaf6;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffa07a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ff8c42;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .perro {
+      background: #fff3e0;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .perro img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #ff6f3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    form {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #ff6f3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Refugio Patitas Felices</h1>
+  <p>¡Dales un hogar, cambia una vida!</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#formulario">Interesado</a>
+  <a href="#perros">Perros en Adopción</a>
+  <a href="#historias">Historias Felices</a>
+  <a href="#ayuda">Cómo Ayudar</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+<section id="inicio">
+  <h2>Bienvenidos</h2>
+  <p>Somos un refugio comprometido con el rescate y adopción responsable de perros en situación vulnerable. Trabajamos cada día por darles una segunda oportunidad a nuestros peludos.</p>
+</section>
+              <div style="text-align: center; margin-top: 20px;">
+  <img src="refig.jpeg" alt="Perros en adopción" style="width: 50%; max-width: 400px; border-radius: 10px;">
+</div>
+
+<div class="audio-player">
+  <h4>🎵 Música ambiental</h4>
+  <audio controls autoplay loop>
+    <source src="Chocolate - Jesse & Joy  Letra..mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</div>
+<section id="formulario">
+  <h2>¿Te interesa adoptar?</h2>
+  <form>
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="number" placeholder="Edad" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <input type="tel" placeholder="Teléfono de contacto" required>
+    <textarea rows="4" placeholder="Cuéntanos por qué quieres adoptar" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<section id="perros">
+  <h2>Perros en Adopción</h2>
+  <div class="galeria">
+    <div class="perro">
+      <img src="https://placedog.net/400/300?id=101" alt="Luna">
+      <h3>Luna</h3>
+      <p>2 años · Labrador · Juguetona y leal.</p>
+    </div>
+     <div class="perro">
+      <img src="chiwis.jpeg" alt="chiwis">
+      <h3>chiwis</h3>
+      <p>2 meses · Mestizo · amoroso y comelon.</p>
+    </div>
+    <div class="perro">
+      <img src="https://placedog.net/400/300?id=102" alt="Max">
+      <h3>Max</h3>
+      <p>3 años · Chihuahua · Cariñoso y protector.</p>
+    </div>
+     <div class="perro">
+      <img src="salchi.jpeg" alt="salchi">
+      <h3>salchi</h3>
+      <p>4 meses · salchica · timida y pequeña.</p>
+    </div>
+    <div class="perro">
+      <img src="https://placedog.net/400/300?id=103" alt="Rocky">
+      <h3>Rocky</h3>
+      <p>1 año · Mestizo · Energético y valiente.</p>
+    </div>
+     <div class="perro">
+      <img src="sonrisas.jpeg" alt="sonrisas">
+      <h3>sonrisas</h3>
+      <p>3 años · mesti · risueño y el mas alegre del refugio .</p>
+    </div>
+    <div class="perro">
+      <img src="https://placedog.net/400/300?id=104" alt="Nala">
+      <h3>Nala</h3>
+      <p>4 meses · Golden mix · Dulce y traviesa.</p>
+    </div>
+     <div class="perro">
+      <img src="troll.jpeg" alt="troll">
+      <h3>troll</h3>
+      <p> 6 meses · bulldog · gordo y amoroso.</p>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <h2>Conócenos en Video</h2>
+  <p>Una mirada a nuestro refugio, los perros que cuidamos y la misión que compartimos.</p>
+  <div style="text-align:center;">
+    <video width="80%" controls>
+      <source src="cachorros-tiernos-y-bonitos-videos-de-perros-cachorros-lunacreciente-ytshorts.savetube.me.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</section>
+
+
+<section id="historias">
+  <h2>Historias Felices</h2>
+  <p>Gracias a personas como tú, muchos de nuestros perritos han encontrado hogares donde reciben amor y cuidado. Conoce algunas de estas conmovedoras historias en nuestro blog o redes sociales.</p>
+</section>
+<section id="ayuda">
+  <h2>¿Cómo Puedes Ayudar?</h2>
+  <ul>
+    <li>🐾 Adoptando un peludo amigo</li>
+    <li>💰 Donando alimentos, medicina o recursos</li>
+    <li>👐 Siendo voluntario en eventos o visitas</li>
+    <li>📢 Difundiendo nuestra causa en redes sociales</li>
+  </ul>
+</section>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p><strong>Teléfono:</strong> +52 555-123-4567</p>
+  <p><strong>Email:</strong> contacto@patitasfelices.org</p>
+  <p><strong>Dirección:</strong> Calle Esperanza 456, CDMX</p>
+</section>
+
+<footer>
+  <p>© 2025 Refugio Patitas Felices. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
